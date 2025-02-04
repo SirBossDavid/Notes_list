@@ -18,18 +18,25 @@ function NoteList(props){
     setSelectedProject(null);
     };
 
+    const [scrollIndex, setScrollIndex] = useState(0);
+    const maxVisible = 5; // Number of visible notes
+
+
 return(
 <>
     <div className="category-row">
         {/* Row of clickable boxes */}
         <h1>{category}</h1>
         <div className="project-row">
-        {projects.map((project) => (
+        <button className = "arrowButton"onClick={() => setScrollIndex((prev) => Math.max(prev - 1, 0))}>←</button>
+        {projects.slice(scrollIndex, scrollIndex + maxVisible).map((project) => (
             <div key={project.id} className="project-box" onClick={() => handleClick(project)}>
             <h3>{project.title}</h3>
             <p>{project.preview}</p>
             </div>
         ))}
+        <button className = "arrowButton" onClick={() => setScrollIndex((prev) => Math.min(prev + 1, projects.length - maxVisible))}>→</button>
+
         </div>
 
         {/* bigger display */}

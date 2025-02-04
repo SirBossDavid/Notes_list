@@ -5,16 +5,19 @@
   
   .project-row {
     display: flex;
-    gap: 10px;
+    gap: 50px;
+    justify-content: center;
   }
+  
   
   .project-box {
     border: 1px solid #ccc;
-    padding: 10px;
+    padding: 20px;
     width: 150px;
     cursor: pointer;
     transition: all 0.3s ease;
     border-radius: 20px;
+    flex-shrink : 0;
   }
   
   .project-box:hover {
@@ -55,3 +58,8 @@
     background-color: #0056b3;
   }
   
+.arrowButton{
+ color: rgb(0, 0, 0);
+ border-radius: 20px;
+ background-color: aquamarine;
+}
