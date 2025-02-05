@@ -3,18 +3,26 @@
 .category-row {
     font-family: Arial, sans-serif;
     padding: 20px;
+    display: flex;
+    flex-direction: column;
   }
-  
+   
+  .category{
+    width: 100%;
+    align-items: flex-start;
+  }
   .project-row {
     display: flex;
     justify-content: space-between;  /* space-between or flex-start: Keep project boxes aligned to the left */
     align-items: center;  /* Vertically center the content */
     gap: 20px;  /* Space between project boxes */
-    width: 98%;
+    width: 96%;
     border: 10px solid;
     padding: 10px;
     margin: 10px;
     background-color: rgb(46, 73, 42);
+    flex-wrap: nowrap;
+    
 }
   
   
@@ -32,10 +40,15 @@
     border-radius: 20px;
     aspect-ratio: 1 / 1;
     max-width: 15%;
-    background-color: #fdff86;
     display: flex;
     flex-direction: column;
     align-items: center;
+    aspect-ratio: 1/1;
+    height: 10%;
+    flex: 1 1 20%;
+  }
+  .project-title{
+    margin-top: 0px;
   }
   .prev_image{
     width: 35%;
@@ -83,7 +96,7 @@
         #d3d3d3 25px /* Light gray lines every 25px */
     );
     border-left: 5px solid #f39c12; /* Orange margin like a notebook */
-    font-family: 'Indie Flower', cursive;
+    
     padding: 15px;
     border-radius: 8px;
     width: 50%;

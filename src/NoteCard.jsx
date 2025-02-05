@@ -29,13 +29,13 @@ return(
 <>
     <div className="category-row">
         {/* Row of clickable boxes */}
-        <h1>{category}</h1>
+        <h1 className='category'>{category}</h1>
         <div className="project-row">
             <button className = "arrowButton" onClick={() => setScrollIndex((prev) => Math.max(prev - 1, 0))}>←</button>
 
             {projects.slice(scrollIndex, scrollIndex + maxVisible).map((project) => (
                 <div key={project.id} className="project-box" onClick={() => handleClick(project)}>
-                    <h3>{project.title}</h3>
+                    <h3 className='project-title'>{project.title}</h3>
                     <img className="prev_image" src={profileImage} alt="Profile" />
                     <p>{project.description}</p>
                 </div>
