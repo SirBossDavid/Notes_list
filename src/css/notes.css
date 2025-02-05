@@ -1,0 +1,149 @@
+
+/* ===========preview box===========*/
+.category-row {
+    font-family: Arial, sans-serif;
+    padding: 20px;
+  }
+  
+  .project-row {
+    display: flex;
+    justify-content: space-between;  /* space-between or flex-start: Keep project boxes aligned to the left */
+    align-items: center;  /* Vertically center the content */
+    gap: 20px;  /* Space between project boxes */
+    width: 98%;
+    border: 10px solid;
+    padding: 10px;
+    margin: 10px;
+    background-color: rgb(46, 73, 42);
+}
+  
+  
+  .project-box {
+    background: repeating-linear-gradient(
+        white,
+        white 24px,
+        #424242 25px /* Light gray lines every 25px */
+    );
+    border: 1px solid #1b1b1b;
+    padding: 20px;
+    width: 100%;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    border-radius: 20px;
+    aspect-ratio: 1 / 1;
+    max-width: 15%;
+    background-color: #fdff86;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .prev_image{
+    width: 35%;
+    
+  }
+  
+  .project-box:hover {
+    background-color: #b9b850;
+  }
+
+.arrowButton {
+    color: rgb(255, 255, 255);
+    border-radius: 20px;
+    background-color: rgb(0, 0, 0);
+    height: 40px;
+    width: 40px;
+    flex-shrink: 0; /* Prevents buttons from resizing */
+}
+
+.button-container {
+    display: flex;
+    justify-content: center; /* Center buttons */
+    width: 100%;
+    margin-bottom: 10px; /* Space between buttons and project row */
+}
+
+
+  /* =========full display=========*/
+  .project-detail-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .project-detail-box {
+    background: repeating-linear-gradient(
+        white,
+        white 24px,
+        #d3d3d3 25px /* Light gray lines every 25px */
+    );
+    border-left: 5px solid #f39c12; /* Orange margin like a notebook */
+    font-family: 'Indie Flower', cursive;
+    padding: 15px;
+    border-radius: 8px;
+    width: 50%;
+    max-width: 600px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  
+  .title {
+    text-align: center;
+    margin-top: 0px;
+    margin-bottom: 10px;
+    
+    width: 100%;
+    border-bottom: solid;
+}
+
+.content {
+    display: flex;
+    align-items: flex-start; /* Align items to the top */
+    justify-content: flex-start;
+    width: 100%;
+    margin: 0px;
+}
+.image{
+  width: 25%;
+  height: auto;
+}
+.info{
+  text-align: flex-start ;
+  flex: 1;
+  padding-left: 5px;
+  padding-bottom: 5px;
+  margin: 0px;
+  
+}
+.name{
+  margin: 0px;
+}
+  
+  button {
+    padding: 10px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background-color: #0056b3;
+  }
+
+  .button-container {
+    display: flex;
+    justify-content: space-between; /* Center buttons horizontally */
+    gap: 10px; /* Add space between buttons */
+    width: 100%;
+    margin-top: 10px; /* Add some space above the buttons */
+
+}
