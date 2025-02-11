@@ -2,9 +2,14 @@ import React, { useState } from 'react';
 
 import {Routes, Route} from "react-router-dom";
 
-import NoteCard from "./NoteCard.jsx";
+//css
+import "./css/App.css"
+
+//jsx
+import NoteCards from "./NoteCards.jsx";
 import Apply from "./apply.jsx";
 import NavBar from './NavBar.jsx';
+
 
 
 function App() {
@@ -45,9 +50,9 @@ function App() {
         <Route path='/' element= {
             <>
               
-              <NoteCard items = {cs_projects} category ="Recommended"/>
-              <NoteCard items = {film_projects} category ="Film"/>
-              <NoteCard items = {cs_projects} category ="cs"/>
+              <NoteCards items = {cs_projects} category ="Recommended"/>
+              <NoteCards items = {film_projects} category ="Film"/>
+              <NoteCards items = {cs_projects} category ="cs"/>
             </>
           }/>
         <Route path='/Apply' element= {<Apply/>}/>

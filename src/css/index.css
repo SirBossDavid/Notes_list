@@ -15,12 +15,15 @@
     font-weight: 400;
   
     color-scheme: light dark;
-    color: rgba(110, 68, 68, 0.87);
-    background-color: #1a1919;
+    color: rgba(0, 0, 0, 0.87);
+    background-color: #3784b8;
   
     
     
   }
   body{
     margin: 0px;
+  }
+  p{
+    margin:0;
   }
